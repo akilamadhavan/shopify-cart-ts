@@ -1,0 +1,41 @@
+{
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "./src/**/*.test.ts",
+        "./example/**/*.ts",
+        "./vite.config.ts",
+        "./vitest.config.ts",
+        "./src/test/**/*.ts"
+    ],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "CommonJS",
+        "outDir": "./dist",
+        "esModuleInterop": true,    
+        "forceConsistentCasingInFileNames": true,
+        "strictPropertyInitialization": false,    
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "useDefineForClassFields": true,
+        "typeRoots": ["./node_modules/@types"],
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext",
+            "es5", "es6", "dom"
+        ],
+        "allowJs": true,
+        "declaration": true,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "rootDir": "./src",
+        "sourceMap": true,
+        "strict": false     
+    }
+}
